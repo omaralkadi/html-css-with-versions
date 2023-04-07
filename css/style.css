@@ -524,14 +524,14 @@ section.slider ul li i {
 
 .products-items {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
     justify-items: center;
     margin-top: 50px;
 }
 
 .product-img {
     position: relative;
-    width: 300px;
 }
 
 .product-img img {
@@ -561,6 +561,7 @@ section.slider ul li i {
     height: 40px;
     text-align: center;
     background-color: #765244;
+    width: 100%;
 }
 
 .product-overlay ul li i {
@@ -676,4 +677,23 @@ section.slider ul li i {
     margin-top: 30px;
     font-size: 15px;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 770px) {
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+    .login ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login ul li {
+        margin-bottom: 20px;
+    }
 }
